@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:#e9f7ff;
+}
+img{
+    height: 325px;
+    width: 450px;
+    margin:10px;
+}
+nav {
+    background-color: #ff90aa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color:#fffa90 ;
+    color: #000000;
+    transition: all 0.3s;
+}
+.intro p{
+    text-align: center
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    margin: 50px 0;
+    width: 100%;
+    max-width: 960px;
+}
+
+#portfolio .block {
+    /* display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px; */
+}
+
+#portfolio .block > div {
+    flex: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+#contact a:hover{
+    background-color: #4fc0e8;
+    transition: all 0.3s;
+}
+.text-center {
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    .container > div {
+        padding: 0 20px;
+        border: 2px solid #000000;
+        background-color: #90d7ff;  
+    }
+}
+
+@media all and (max-width: 767px) {
+    .container > div {
+        margin: 25px 0;
+    }
+
+    #portfolio .block {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 50px;
+        
+        
+    }
+
+    nav ul {
+        background-color: #000000;
+        float: left;
+    }
+
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 10px;
+    }
+}
