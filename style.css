@@ -87,7 +87,10 @@ nav ul li a:hover {
 .text-center {
     text-align: center;
 }
-
+#intro p{
+    padding-top: 5%;
+    font-size: x-large;
+}
 @media all and (min-width: 768px) {
     .container > div {
         padding: 0 20px;
